@@ -3,7 +3,7 @@ $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'cucumber-rails'
-  s.version     = '1.4.2'
+  s.version     = '1.4.3'
   s.authors     = ["Aslak Hellesøy", "Dennis Blöte", "Rob Holland"]
   s.description = "Cucumber Generator and Runtime for Rails"
   s.summary     = "#{s.name}-#{s.version}"
@@ -13,15 +13,15 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
 
   s.add_runtime_dependency('capybara', ['>= 1.1.2', '< 3'])
-  s.add_runtime_dependency('cucumber', ['>= 1.3.8', '< 2.1'])
+  s.add_runtime_dependency('cucumber', ['>= 1.3.8', '< 3'])
   s.add_runtime_dependency('nokogiri', '~> 1.5')
   s.add_runtime_dependency('railties', ['>= 3', '< 5'])
-  s.add_runtime_dependency('mime-types', ['>= 1.16', '< 3'])
+  s.add_runtime_dependency('mime-types', ['>= 1.16', '< 4'])
 
   # Main development dependencies
-  s.add_development_dependency('ammeter', ['>= 0.2.9', '< 2'])
+  s.add_development_dependency('ammeter', ['>= 0.2.9', '< 1.1.3'])
   s.add_development_dependency('appraisal', '>= 0.5.1')
-  s.add_development_dependency('aruba', '>= 0.4.11')
+  s.add_development_dependency('aruba', '~> 0.8.0')
   s.add_development_dependency('builder', ['>= 2.1.2', '< 4'])
   s.add_development_dependency('bundler', '>= 1.3.5')
   s.add_development_dependency('selenium-webdriver', '>= 2.45.0')
